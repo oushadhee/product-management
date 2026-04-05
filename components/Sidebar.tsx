@@ -5,7 +5,7 @@ export default function Sidebar() {
     return (
         <div className="w-50 bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-700 h-screen fixed left-0 top-0 p-6 hidden md:block">
 
-            {/* Logo + Brand */}
+
             <div className="w-40 h-40 bg-[#00bf63] rounded-2xl flex items-center justify-center">
                 <img
                     src="/images/logo.png"
@@ -13,7 +13,7 @@ export default function Sidebar() {
                     className="w-45 h-40 rounded-xl"
                 />
             </div>
-            {/* Navigation */}
+
             <nav className="space-y-2 mb-12">
                 <Link
                     href="/dashboard"
@@ -30,7 +30,7 @@ export default function Sidebar() {
                 </Link>
             </nav>
 
-            {/* Add Product Button */}
+
             <div className="absolute bottom-8 left-6 right-6">
                 <Link
                     href="/products"

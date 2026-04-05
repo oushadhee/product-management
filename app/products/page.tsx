@@ -37,7 +37,7 @@ export default function ProductsPage() {
 
     return (
         <div className="max-w-7xl mx-auto">
-            {/* Header */}
+
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10">
                 <div>
                     <h1 className="text-4xl font-semibold tracking-tight">All Products</h1>
@@ -66,7 +66,7 @@ export default function ProductsPage() {
                 </div>
             </div>
 
-            {/* Search Bar */}
+
             <div className="relative mb-8 max-w-md">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                 <input
@@ -78,7 +78,7 @@ export default function ProductsPage() {
                 />
             </div>
 
-            {/* Product Table */}
+
             <ProductTable
                 products={filteredProducts}
                 onEdit={(product) => {
@@ -88,7 +88,7 @@ export default function ProductsPage() {
                 onDelete={handleDelete}
             />
 
-            {/* Add/Edit Modal */}
+
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
                     <div className="bg-white dark:bg-gray-800 rounded-3xl max-w-lg w-full p-8 shadow-2xl">

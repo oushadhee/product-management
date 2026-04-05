@@ -18,7 +18,7 @@ export default function ProductForm({ initialData, onSubmit, onClose }: ProductF
 
     const [errors, setErrors] = useState<Record<string, string>>({});
 
-    // Reset form when opening for new product (important fix)
+
     useEffect(() => {
         if (!initialData) {
             setForm({
@@ -126,7 +126,7 @@ export default function ProductForm({ initialData, onSubmit, onClose }: ProductF
                 </button>
                 <button
                     type="submit"
-                    className="flex-1 py-3.5 bg-[#00bf63] hover:bg-[#4d2626] text-white rounded-2xl font-medium transition-colors"
+                    className="flex-1 py-3.5 bg-[#00bf63] hover:bg-[#00bf63] text-white rounded-2xl font-medium transition-colors"
                 >
                     {initialData ? 'Update Product' : 'Add Product'}
                 </button>

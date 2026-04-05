@@ -14,7 +14,7 @@ export default function Dashboard() {
 
     return (
         <div>
-            {/* Welcome Message */}
+
             <div className="mb-12">
                 <h2 className="text-4xl font-semibold text-gray-900 dark:text-white">
                     Welcome to the
@@ -27,7 +27,7 @@ export default function Dashboard() {
                 </p>
             </div>
 
-            {/* Statistics Cards */}
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <StatsCard
                     title="Total Products"
@@ -49,7 +49,7 @@ export default function Dashboard() {
                 />
             </div>
 
-            {/* Recent Products */}
+
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Recent Products</h2>
                 <Link

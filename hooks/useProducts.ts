@@ -7,7 +7,7 @@ const STORAGE_KEY = 'products';
 export function useProducts() {
     const [products, setProducts] = useState<Product[]>([]);
 
-    // Load from localStorage on first render
+
     useEffect(() => {
         const stored = localStorage.getItem(STORAGE_KEY);
         if (stored) {
